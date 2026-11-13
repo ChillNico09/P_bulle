@@ -11,26 +11,26 @@ export function convertCode(value) {
  * Compare deux valeurs avec l'égalité souple.
  */
 export function sameCodeLoose(value1, value2) {
-  return value1 == value2 ? true : false
+  return value1 == value2
 }
 
 /**
  * Compare deux valeurs avec l'égalité stricte.
  */
 export function sameCodeStrict(value1, value2) {
-  return value1 === value2 ? true : false
+  return value1 === value2
 }
 
 /**
  * Indique si un code est pair.
  */
 export function isEvenCode(code) {
-  return code % 2 == 0 ? true : false
+  return code % 2 == 0
 }
 
 /**
  * Indique si la conversion de la valeur produit NaN.
  */
 export function isInvalidCode(value) {
-  return isNaN(value) ? true : false
+  return isNaN(value)
 }
