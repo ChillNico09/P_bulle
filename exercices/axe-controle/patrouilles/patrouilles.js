@@ -15,7 +15,7 @@ export function sumRounds(numberOfRounds) {
  */
 export function countSymbols(code) {
   let totalCharacters = 0;
-  for(letter of code){
+  for(let letter of code){
     totalCharacters++;
   }
   return totalCharacters;
@@ -26,7 +26,7 @@ export function countSymbols(code) {
  */
 export function countX(code) {
   let totalX = 0;
-  for(letter of code){
+  for(let letter of code){
     (letter == 'X')? totalX++ : false
   }
   return totalX;
