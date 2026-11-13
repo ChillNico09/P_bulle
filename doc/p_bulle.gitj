@@ -36,5 +36,16 @@
       "source": "author"
     }
   ],
-  "exceptions": []
+  "exceptions": [
+    {
+      "id": "55153e6b-7267-40ab-a67c-94efe09710ea",
+      "type": "commitless",
+      "author": "Nicolas Marques",
+      "date": "2026-11-13T15:31:00.000Z",
+      "name": "Mettre à jour jdt",
+      "description": "",
+      "duration": 1,
+      "status": "Autre"
+    }
+  ]
 }
