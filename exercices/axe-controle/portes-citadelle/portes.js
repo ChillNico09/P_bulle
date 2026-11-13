@@ -5,7 +5,6 @@
  */
 export function accessMessage(level) {
   return level >= 5 ? "Accès autorisé" : "Accès refusé";
-  // DONE
 }
 
 /**
@@ -13,7 +12,6 @@ export function accessMessage(level) {
  */
 export function doorStatus(isOpen) {
   return isOpen ? "Ouverte" : "Fermée";
-  // TODO
 }
 
 /**
@@ -34,7 +32,6 @@ export function zoneName(code) {
     case 'X':
       return 'Zone inconnue'
   }
-  // TODO
 }
 
 /**
@@ -45,5 +42,4 @@ export function alertLevel(energy) {
   if(energy < 50 ){return "FAIBLE"}
   if(energy < 80 ){return "STABLE"}
   return 'OPTIMAL'
-  // TODO
 }
