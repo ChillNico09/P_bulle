@@ -1,6 +1,8 @@
 // @ts-check
 /**
  * Additionne les numéros de ronde de 1 au nombre indiqué.
+ * @param {*} numberOfRounds Le nombre de ronde
+ * @returns La somme des numéros de ronde
  */
 export function sumRounds(numberOfRounds) {
   let total = 0;
@@ -12,6 +14,8 @@ export function sumRounds(numberOfRounds) {
 
 /**
  * Compte le nombre de caractères d'un code.
+ * @param {*} code Le code à compter ses caractères
+ * @returns Le nombre de caractères du code
  */
 export function countSymbols(code) {
   let totalCharacters = 0;
@@ -23,6 +27,8 @@ export function countSymbols(code) {
 
 /**
  * Compte le nombre de caractères `X` dans un code.
+ * @param {*} code Le code à compter ses 'X'
+ * @returns Le nombre de 'X' dans le code
  */
 export function countX(code) {
   let totalX = 0;
@@ -34,6 +40,9 @@ export function countX(code) {
 
 /**
  * Calcule le nombre de tours complets possibles avant épuisement de l'énergie.
+ * @param {*} energy L'énergie disponible
+ * @param {*} consumption La consomation par tour
+ * @returns Le nombre de tour possible
  */
 export function turnsBeforeEmpty(energy, consumption) {
   let numberTurned = 0;
@@ -46,6 +55,8 @@ export function turnsBeforeEmpty(energy, consumption) {
 
 /**
  * Retourne la première ronde pour laquelle le total dépasse une limite.
+ * @param {*} limit La limite à vérifier
+ * @returns Le numéro de la première ronde laquelle le total dépasse la limite.
  */
 export function firstRoundAbove(limit) {
   let roundIndex = 0;
