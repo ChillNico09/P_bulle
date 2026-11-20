@@ -16,8 +16,7 @@ export function runLater(callback, delay) {
  * @param {*} callback Le callback
  */
 export function sendSignal(message, delay, callback) {
-  runLater(callback, delay);
-  callback(message);
+  setTimeout(callback, delay, message)
 }
 
 /**
@@ -27,9 +26,8 @@ export function sendSignal(message, delay, callback) {
  * @param {*} callback Le callback
  */
 export function doubleLater(value, delay, callback) {
-  runLater(callback, delay);
-  value *= 2;
-  callback(value);
+  value*=2;
+  setTimeout(callback, delay, value);
 }
 
 /**
@@ -39,6 +37,6 @@ export function doubleLater(value, delay, callback) {
  * @param {*} callback Le callback
  */
 export function delayedStatus(name, delay, callback) {
-  runLater(callback, delay);
-  callback(`${name} prêt`);
+  name += " prêt"
+  setTimeout(callback, delay, name)
 }
