@@ -46,6 +46,16 @@
       "description": "",
       "duration": 1,
       "status": "Autre"
+    },
+    {
+      "id": "1e3c60ae-ada7-4136-b861-ca04ab8a31e2",
+      "type": "commitless",
+      "author": "Nicolas Marques",
+      "date": "2026-11-20T15:23:00.000Z",
+      "name": "autre",
+      "description": "mettre à jour le jdt",
+      "duration": 1,
+      "status": ""
     }
   ]
 }
