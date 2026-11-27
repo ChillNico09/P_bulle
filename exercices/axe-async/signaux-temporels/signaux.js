@@ -2,8 +2,8 @@
 
 /**
  * Exécute un callback après un délai.
- * @param {*} callback Le callback
- * @param {*} delay Le délai en millisecondes
+ * @param {Function} callback Le callback
+ * @param {number} delay Le délai en millisecondes
  */
 export function runLater(callback, delay) {
   setTimeout(callback, delay);
@@ -11,9 +11,9 @@ export function runLater(callback, delay) {
 
 /**
  * Transmet un message à un callback après un délai.
- * @param {*} message Le message
- * @param {*} delay Le délai en millisecondes
- * @param {*} callback Le callback
+ * @param {string} message Le message
+ * @param {number} delay Le délai en millisecondes
+ * @param {Function} callback Le callback
  */
 export function sendSignal(message, delay, callback) {
   setTimeout(callback, delay, message)
@@ -21,9 +21,9 @@ export function sendSignal(message, delay, callback) {
 
 /**
  * Double une valeur puis la transmet à un callback après un délai.
- * @param {*} value La valeur à multiplier
- * @param {*} delay Le délai en millisecondes
- * @param {*} callback Le callback
+ * @param {number} value La valeur à multiplier
+ * @param {number} delay Le délai en millisecondes
+ * @param {Function} callback Le callback
  */
 export function doubleLater(value, delay, callback) {
   value*=2;
@@ -32,9 +32,9 @@ export function doubleLater(value, delay, callback) {
 
 /**
  * Construit un statut puis le transmet après un délai.
- * @param {*} name Le nom du statut à transmettre
- * @param {*} delay Le délai en millisecondes
- * @param {*} callback Le callback
+ * @param {string} name Le nom du statut à transmettre
+ * @param {number} delay Le délai en millisecondes
+ * @param {Function} callback Le callback
  */
 export function delayedStatus(name, delay, callback) {
   name += " prêt"
