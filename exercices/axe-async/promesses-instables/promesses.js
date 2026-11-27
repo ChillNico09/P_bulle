@@ -2,7 +2,7 @@
 
 /**
  * Crée une promesse immédiatement résolue avec un message.
- * @param {*} message Le message à résoudre
+ * @param {string} message Le message à résoudre
  * @returns Le message
  */
 export function createSignal(message) {
@@ -13,8 +13,8 @@ export function createSignal(message) {
 
 /**
  * Retourne une valeur après un délai.
- * @param {*} value La valeur à retourner
- * @param {*} delay Le délai en millisecondes
+ * @param {any} value La valeur à retourner
+ * @param {number} delay Le délai en millisecondes
  * @returns value après un délai (delay)
  */
 export function delayValue(value, delay) {
@@ -25,7 +25,7 @@ export function delayValue(value, delay) {
 
 /**
  * Vérifie un code temporel.
- * @param {*} code Le code
+ * @param {string} code Le code
  * @returns Si le code est accepté ou non
  */
 export function checkTemporalCode(code) {
@@ -36,7 +36,7 @@ export function checkTemporalCode(code) {
 
 /**
  * Prépare un message à partir d'un signal asynchrone.
- * @param {*} message Le message
+ * @param {string} message Le message
  * @returns Retourne "Signal : <message>"
  */
 export function prepareMessage(message) {
@@ -49,7 +49,7 @@ export function prepareMessage(message) {
 
 /**
  * Vérifie un code et transforme un rejet en message de refus.
- * @param {*} code Le code
+ * @param {string} code Le code
  * @returns Retourne "Code accepté" ou "Code refusé"
  */
 export function safeTemporalCode(code) {
