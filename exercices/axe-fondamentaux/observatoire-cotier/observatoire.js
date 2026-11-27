@@ -45,10 +45,10 @@ export function hasBirdCount(count) {
  * @returns La valeur de l'addition des 2 valeurs
  */
 export function totalBirds(northCount, southCount) {
-  isNotTransmitted(northCount) ? northCount = 0 : false;
-  isOffline(northCount) ? northCount = 0 : false;
-  isNotTransmitted(southCount) ? southCount = 0 : false;
-  isOffline(southCount) ? southCount = 0 : false;
+  northCount = isNotTransmitted(northCount) ? 0 : northCount;
+  northCount = isOffline(northCount) ? 0 : northCount;
+  southCount = isNotTransmitted(southCount) ? 0 : southCount;
+  southCount = isOffline(southCount) ? 0 : southCount;
   return northCount + southCount;
 }
 
