@@ -2,7 +2,7 @@
 
 /**
  * Valide une quantité d'énergie.
- * @param {*} energy Valeur à vérifier
+ * @param {number} energy Valeur à vérifier
  * @returns La valeur de energy
  */
 export function validateEnergy(energy) {
@@ -17,7 +17,7 @@ export function validateEnergy(energy) {
 
 /**
  * Vérifie une énergie sans propager l'exception.
- * @param {*} energy Valeur à vérifier
+ * @param {number} energy Valeur à vérifier
  * @returns Si l'énergie est valide ou non
  */
 export function safeEnergyCheck(energy) {
@@ -32,7 +32,7 @@ export function safeEnergyCheck(energy) {
 
 /**
  * Valide un code de porte autorisé.
- * @param {*} code Valeur à vérifier
+ * @param {string} code Valeur à vérifier
  * @returns Le code Ex: "ALPHA"
  */
 export function validateGateCode(code) {
@@ -50,7 +50,7 @@ export function validateGateCode(code) {
 
 /**
  * Vérifie un code de porte sans propager l'exception.
- * @param {*} code Valeur à vérifier
+ * @param {string} code Valeur à vérifier
  * @returns Si le code est accepté ou refusé
  */
 export function safeGateCheck(code) {
@@ -65,14 +65,14 @@ export function safeGateCheck(code) {
 
 /**
  * Compte les tentatives valides représentées par `A` ou `B`.
- * @param {*} text Valeur à vérifier
+ * @param {string} text Valeur à vérifier
  * @returns La somme de 'A' et de 'B' dans text
  */
 export function countValidAttempts(text) {
   let validCount = 0;
   for (const letter of text) {
       try{
-        if(letter == 'A' || letter == 'B') validCount++;
+        if(letter === 'A' || letter === 'B') validCount++;
       }
       catch{}
   }
@@ -81,7 +81,7 @@ export function countValidAttempts(text) {
 
 /**
  * Compte les tentatives effectuées jusqu'au troisième `X` ou à la fin.
- * @param {*} sequence Valeur à vérifier
+ * @param {string} sequence Valeur à vérifier
  * @returns La somme des lettres valides + le nombre d'erreur avant que ça soit verrouiller.
  */
 export function attemptsBeforeLock(sequence) {
@@ -90,8 +90,8 @@ export function attemptsBeforeLock(sequence) {
   for (const letter of sequence) {
     try{
       if(numberErrors >= 3) throw "Plus d'essais"
-      if(letter == 'X') numberErrors++;
-      if(letter == 'V') numberLetterValid++;
+      if(letter === 'X') numberErrors++;
+      if(letter === 'V') numberLetterValid++;
     }
     catch{
       
